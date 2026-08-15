@@ -16,11 +16,9 @@ The project uses a dataset containing approximately 250,000 records. The workflo
 
 ## Models
 
-The project includes the following models:
+The overall project evaluates multiple approaches to SMS fraud detection, including Logistic Regression, Random Forest, and a neural-network model.
 
-- Logistic Regression — used as a baseline classification model.
-- Random Forest — used as a nonlinear baseline and for feature-importance analysis.
-- Neural Network — a fully connected TensorFlow/Keras model with 19 input features, hidden layers of 32 and 16 neurons, and one output neuron for binary classification.
+The code included in this repository contains the LSTM implementation developed during Milestone C. The LSTM uses 32 units, a dropout rate of 0.20, a 16-neuron dense layer, and a sigmoid output layer for binary classification. The model uses the Adam optimizer and binary cross-entropy loss.
 
 ## Dataset and Preprocessing
 
@@ -74,19 +72,7 @@ SMS-Fraud-Detection/
 │
 ├── README.md
 ├── requirements.txt
-│
-├── notebooks/
-│   └── SMS-Fraud-Detection.ipynb
-│
-├── src/
-│   ├── data_preparation.py
-│   ├── models.py
-│   └── evaluation.py
-│
-└── results/
-    ├── confusion_matrix.png
-    ├── training_accuracy.png
-    └── training_loss.png
+└── Week5_MilestoneC_LSTM_SMS_Fraud_Gabriel.ipynb
 ```
 ## Running the Project
 The primary project notebook can be opened and executed using Google Colab or a compatible Jupyter environment.
